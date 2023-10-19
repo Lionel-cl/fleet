@@ -5,8 +5,8 @@ from odoo.tests.common import TransactionCase
 
 
 class TestVehicleLogServicesCommon(TransactionCase):
-    def setUp(self):
-        super().setUp()
+    def setUpClass(self):
+        super().setUpClass()
         self.vehicle = self.env["fleet.vehicle"].create(
             {
                 "license_plate": "1-ACK-555",
