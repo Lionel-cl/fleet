@@ -4,16 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0-20230901\n"
+"Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 09:48+0000\n"
-"PO-Revision-Date: 2023-10-16 09:48+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-19 20:39+0000\n"
+"Last-Translator: HOGO Solutions\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_needaction
@@ -121,7 +121,7 @@ msgstr "Description"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__display_name
 msgid "Display Name"
-msgstr "Nom d'affichage"
+msgstr "Nom affiché"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields.selection,name:fleet_vehicle_log_fuel.selection__fleet_vehicle_log_fuel__state__done
@@ -137,7 +137,7 @@ msgstr "Conducteur"
 #: code:addons/fleet_vehicle_log_fuel/models/fleet_vehicle_cost.py:0
 #, python-format
 msgid "Emptying the odometer value of a vehicle is not allowed."
-msgstr "Il n'est pas permis de vider la valeur du odomètre d'un véhicule."
+msgstr "Il n'est pas permis d'effacer la valeur du odomètre d'un véhicule."
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model,name:fleet_vehicle_log_fuel.model_fleet_vehicle_cost_report
@@ -178,12 +178,12 @@ msgstr "Coûts du carburant par mois"
 #: model:ir.model.fields.selection,name:fleet_vehicle_log_fuel.selection__equipment_service_type__category__fuel
 #: model:ir.model.fields.selection,name:fleet_vehicle_log_fuel.selection__fleet_service_type__category__fuel
 msgid "Fuel Log"
-msgstr "Suivi de consommation"
+msgstr "Relevès des consommations"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle__fuel_count
-msgid "Fuel Log Count"
-msgstr "Suivi de consommation du coûts"
+msgid "Fuel Logs"
+msgstr "Relevès"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.actions.act_window,name:fleet_vehicle_log_fuel.fleet_vehicle_log_fuel_action
@@ -193,12 +193,12 @@ msgstr "Suivi de consommation du coûts"
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_vehicle_log_fuel_view_search
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_vehicle_view_form
 msgid "Fuel Logs"
-msgstr "Suivi de consommation"
+msgstr "Relevès des consommations"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model,name:fleet_vehicle_log_fuel.model_fleet_vehicle_log_fuel
 msgid "Fuel log for vehicles"
-msgstr "Registres de carburant pour véhicules"
+msgstr "Relevès de la consommations de carburant des véhicules"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__has_message
@@ -342,27 +342,27 @@ msgstr "Valeur de l'odomètre"
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__odometer
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__odometer_id
 msgid "Odometer measure of the vehicle at the moment of this log"
-msgstr "Mesure de l'odomètre du véhicule au moment de ce suivi"
+msgstr "Kilométrage du véhicule au moment de ce suivi"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__price_per_liter
 msgid "Price Per Liter"
-msgstr ""
+msgstr "Prix par litre"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Responsable"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields.selection,name:fleet_vehicle_log_fuel.selection__fleet_vehicle_log_fuel__state__running
 msgid "Running"
-msgstr ""
+msgstr "En cours"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__service_type_id
 msgid "Service Type"
-msgstr ""
+msgstr "Type de service"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__state
@@ -401,7 +401,7 @@ msgstr ""
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__odometer_unit
 msgid "Unit of the odometer "
-msgstr ""
+msgstr "Unité de mesure de l'odomètre"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_unread
@@ -442,4 +442,4 @@ msgstr "Écrivez ici toute autre information relative au service effectué."
 #. module: fleet_vehicle_log_fuel
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_vehicle_view_form
 msgid "show the fuel logs for this vehicle"
-msgstr "afficher le suivie de consommation pour ce véhicule"
+msgstr "Afficher le suivi de consommation pour ce véhicule"
