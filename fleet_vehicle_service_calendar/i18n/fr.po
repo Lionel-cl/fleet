@@ -4,16 +4,15 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0-20230901\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 12:45+0000\n"
-"PO-Revision-Date: 2023-10-16 12:45+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-29 03:45+0000\n"
+"Last-Translator: HOGO Solutions\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. module: fleet_vehicle_service_calendar
 #: model:ir.model.fields,field_description:fleet_vehicle_service_calendar.field_equipment_log_services__meeting_count
@@ -27,6 +26,8 @@ msgid ""
 "<span class=\"o_stat_text\" attrs=\"{'invisible': [('meeting_count', '&lt;', 2)]}\"> Meetings</span>\n"
 "                        <span class=\"o_stat_text\" attrs=\"{'invisible': [('meeting_count', '&gt;', 1)]}\"> Meeting</span>"
 msgstr ""
+"<span class=\"o_stat_text\" attrs=\"{'invisible': [('meeting_count', '&lt;', 2)]}\"> Rendez-vous</span>\n"
+"                        <span class=\"o_stat_text\" attrs=\"{'invisible': [('meeting_count', '&gt;', 1)]}\"> Rendez-vous</span>"
 
 #. module: fleet_vehicle_service_calendar
 #: model:ir.model,name:fleet_vehicle_service_calendar.model_calendar_event

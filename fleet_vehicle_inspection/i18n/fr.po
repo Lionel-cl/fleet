@@ -4,16 +4,15 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0-20230901\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 11:11+0000\n"
-"PO-Revision-Date: 2023-10-16 11:11+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-29 03:45+0000\n"
+"Last-Translator: HOGO Solutions\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__state
@@ -23,9 +22,9 @@ msgid ""
 " * Confirmed: inspection has been confirmed.\n"
 " * Canceled: has been canceled, can't be confirmed anymore."
 msgstr ""
-" * Brouillon : pas encore confirmé.\n"
-" * Confirmé : l'inspection a été confirmée.\n"
-" * Annulé : a été annulé, ne peut plus être confirmé."
+" * Brouillon: pas encore confirmé.\n"
+" * Confirmée: l'inspection a été confirmée.\n"
+" * Annulée: a été annulée, ne peut plus être confirmée."
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_equipment_equipment__inspection_count
@@ -41,7 +40,7 @@ msgstr ""
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_form_view
 msgid "<span class=\"o_stat_text\"> Inspection</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\"> Inspections</span>"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_line_form_view
@@ -110,7 +109,7 @@ msgstr "Annuler"
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__equipment_inspection__state__cancel
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__fleet_vehicle_inspection__state__cancel
 msgid "Canceled"
-msgstr "Annulé"
+msgstr "Annulée"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_form_view
@@ -121,7 +120,7 @@ msgstr "Confirmer l'inspection"
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__equipment_inspection__state__confirmed
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__fleet_vehicle_inspection__state__confirmed
 msgid "Confirmed"
-msgstr "Confirmé"
+msgstr "Confirmée"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__create_uid
@@ -137,12 +136,12 @@ msgstr "Créé par"
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__create_date
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line_image__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Créé le"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__date_inspected
 msgid "Date when the vehicle has been inspected"
-msgstr "Créé le"
+msgstr "Date à laquelle le véhicule a été inspecté"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__direction
@@ -153,12 +152,12 @@ msgstr "Direction"
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Direction IN"
-msgstr ""
+msgstr "En entrant"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Direction OUT"
-msgstr ""
+msgstr "En sortant"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__display_name
@@ -183,7 +182,7 @@ msgstr "Menu déroulant"
 #: code:addons/fleet_vehicle_inspection/models/fleet_vehicle_inspection.py:0
 #, python-format
 msgid "Emptying the odometer value of a vehicle is not allowed."
-msgstr "Il n'est pas permis de vider la valeur du odomètre d'un véhicule."
+msgstr "Il n'est pas permis d'effacer la valeur du odomètre d'un véhicule."
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model,name:fleet_vehicle_inspection.model_fleet_vehicle_inspection
@@ -193,7 +192,7 @@ msgstr "Inspection de l'équipement"
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Failed Inspections"
-msgstr "Échec des inspections"
+msgstr "Inspections en échec"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__equipment_inspection__result__failure
@@ -203,22 +202,22 @@ msgstr "Échec des inspections"
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_line_form_view
 msgid "Failure"
-msgstr "Échec"
+msgstr "Echec"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__vehicle_id
 msgid "Fleet Vehicle"
-msgstr ""
+msgstr "Parc automobile"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_calendar_view
 msgid "Fleet Vehicle Inspection"
-msgstr ""
+msgstr "Inspections des véhicules"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model,name:fleet_vehicle_inspection.model_fleet_vehicle_inspection_item
 msgid "Fleet Vehicle Inspection Item"
-msgstr ""
+msgstr "Point d'inspection"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model,name:fleet_vehicle_inspection.model_fleet_vehicle_inspection_line
@@ -386,12 +385,12 @@ msgstr "Date d'inspection"
 #: model:ir.actions.act_window,name:fleet_vehicle_inspection.fleet_vehicle_inspection_item_act_window
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__inspection_item_id
 msgid "Inspection Item"
-msgstr "Élément d'inspection"
+msgstr "Points d'inspection"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.ui.menu,name:fleet_vehicle_inspection.fleet_vehicle_inspection_item_menu
 msgid "Inspection Items"
-msgstr "Éléments d'inspection"
+msgstr "Points d'inspection"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__inspection_line_ids
@@ -413,34 +412,34 @@ msgstr "Lignes d'inspection"
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_equipment_equipment__inspection_ids
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle__inspection_ids
 msgid "Inspection Logs"
-msgstr ""
+msgstr "Historique des inspections"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Inspection Not Completed"
-msgstr ""
+msgstr "Inspection incomplète"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__result
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Inspection Result"
-msgstr ""
+msgstr "Résultat de l'inspection"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Inspection State"
-msgstr ""
+msgstr "Statut de l'inspection"
 
 #. module: fleet_vehicle_inspection
 #: code:addons/fleet_vehicle_inspection/models/fleet_vehicle_inspection.py:0
 #, python-format
 msgid "Inspection cannot be completed. There are uninspected items."
-msgstr ""
+msgstr "Inspection incomplète. Des points sont encore à inspecter."
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
 msgid "Inspector"
-msgstr ""
+msgstr "Inspecteur"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_item__instruction
@@ -621,54 +620,56 @@ msgstr ""
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__odometer
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__odometer_id
 msgid "Odometer measure of the vehicle at the moment of this log"
-msgstr ""
+msgstr "Kilométrage du véhicule à ce moment là"
 
 #. module: fleet_vehicle_inspection
 #: code:addons/fleet_vehicle_inspection/models/fleet_vehicle_inspection.py:0
 #, python-format
 msgid "Only inspections in 'draft' or 'cancel' states can be confirmed"
-msgstr ""
+msgstr "Seule une inspection dans le statut 'brouillon' ou 'annaulée' peut être confirmée."
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_line_form_view
 msgid ""
 "Optimization required! Reduce the image size or increase your compression "
 "settings."
-msgstr ""
+msgstr "Optilisation "
+"Optimisation requise! Réduisez la taille de l’image ou augmentez votre compression "
+"Paramètre."
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__name
 msgid "Reference"
-msgstr ""
+msgstr "Référence"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_form_view
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_line_form_view
 msgid "Refuse"
-msgstr ""
+msgstr "Refuser"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line_image__inspection_line_id
 msgid "Related Inspection Line"
-msgstr ""
+msgstr "Points d'inspection liés"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__activity_user_id
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_item__activity_user_id
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Responsable"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__result
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_line_form_view
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__result_description
 msgid "Result Description"
-msgstr ""
+msgstr "Description du résultat"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__message_has_sms_error
@@ -685,13 +686,13 @@ msgstr ""
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_form_view
 msgid "Set to Draft"
-msgstr ""
+msgstr "Mettre à 'Brouillon'"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__state
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__state
 msgid "State"
-msgstr ""
+msgstr "Statut"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__activity_state
@@ -765,7 +766,7 @@ msgstr "Inspection de véhicule"
 #. module: fleet_vehicle_inspection
 #: model:ir.actions.act_window,name:fleet_vehicle_inspection.fleet_vehicle_inspection_line_act_window
 msgid "Vehicle Inspection Line"
-msgstr "Ligne d'inspection des véhicules"
+msgstr "Points d'inspection automobile"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.ui.menu,name:fleet_vehicle_inspection.fleet_vehicle_inspection_menu

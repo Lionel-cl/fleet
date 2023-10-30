@@ -4,18 +4,17 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0-20230901\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 13:19+0000\n"
-"PO-Revision-Date: 2023-10-16 13:19+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-29 03:49+0000\n"
+"Last-Translator: HOGO Solutions\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. module: fleet_vehicle_history_date_end
 #: model:ir.model,name:fleet_vehicle_history_date_end.model_fleet_vehicle_assignation_log
 msgid "Drivers history on a vehicle"
-msgstr "Historique de conducteurs sur un véhicule"
+msgstr "Historique des conducteurs d'un véhicule"

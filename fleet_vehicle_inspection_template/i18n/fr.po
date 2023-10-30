@@ -4,16 +4,15 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0-20230901\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 11:40+0000\n"
-"PO-Revision-Date: 2023-10-16 11:40+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-29 03:45+0000\n"
+"Last-Translator: HOGO Solutions\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 
 #. module: fleet_vehicle_inspection_template
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection_template.field_fleet_vehicle_inspection_template__message_needaction
@@ -142,13 +141,13 @@ msgstr "Élément du modèle d'inspection"
 #: model:ir.actions.act_window,name:fleet_vehicle_inspection_template.fleet_vehicle_inspection_template_line_act_window
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection_template.fleet_vehicle_inspection_template_form_view
 msgid "Inspection Template Line"
-msgstr "Ligne de modèle d'inspection"
+msgstr "Point d'inspection"
 
 #. module: fleet_vehicle_inspection_template
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection_template.field_fleet_vehicle_inspection_template__inspection_template_line_ids
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection_template.fleet_vehicle_inspection_template_form_view
 msgid "Inspection Template Lines"
-msgstr "Lignes de modèle d'inspection"
+msgstr "Liste des points d'inspection"
 
 #. module: fleet_vehicle_inspection_template
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection_template.field_fleet_vehicle_inspection_template_line__inspection_template_id
