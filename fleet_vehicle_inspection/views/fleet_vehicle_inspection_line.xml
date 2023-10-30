@@ -47,97 +47,94 @@
                         </h1>
                     </div>
                     <group>
-                        <field name="inspection_item_id" />
+                        <field name="inspection_item_id" options="{'no_quick_create': True}"/>
+                        <field name="inspection_item_instruction"/>
                     </group>
                     <notebook>
-                        <page name="instruction" string="Instruction">
-                            <field name="inspection_item_instruction"/>
+                        <page name="result" string="Result">
+                            <field name="result_description" placeholder="Your observations" style="width: 100%"/>
                         </page>
-                        <page name="result" string="Result" colspan="2">
-                            <field name="result_description"/>
-                        </page>
+
                         <page name="images_page" string="Images">
-                            <group name="images" string="Images">
-                                <field
-                                    name="inspection_line_image_ids"
-                                    class="o_inspection_image_list"
-                                    context="{'default_inspection_line_id': active_id}"
-                                    nolabel="1"
+                            <field
+                                name="inspection_line_image_ids"
+                                class="o_inspection_image_list"
+                                context="{'default_inspection_line_id': active_id}"
+                                nolabel="1"
+                            >
+                                <kanban
+                                    string="Inspection Line Images"
+                                    default_order="sequence"
                                 >
-                                    <kanban
-                                        string="Inspection Line Images"
-                                        default_order="sequence"
-                                    >
-                                        <field name="id" />
-                                        <field name="name" />
-                                        <field name="image_1920" />
-                                        <field name="sequence" widget="handle" />
-                                        <templates>
-                                            <t t-name="kanban-box">
-                                                <div
-                                                    class="card oe_kanban_global_click p-0"
-                                                >
-                                                    <div class="o_squared_image">
-                                                        <img
-                                                            class="card-img-top"
-                                                            t-att-src="kanban_image('fleet.vehicle.inspection.line.image', 'image_1920', record.id.raw_value)"
-                                                            t-att-alt="record.name.value"
-                                                        />
-                                                    </div>
-                                                    <div class="card-body p-0">
-                                                        <h4
-                                                            class="card-title p-2 m-0 bg-200"
-                                                        >
-                                                            <small><field
-                                                                    name="name"
-                                                                /></small>
-                                                        </h4>
-                                                    </div>
-                                                    <!-- below 100 Kb: good -->
-                                                    <t
-                                                        t-if="record.image_1920.raw_value.length &lt; 100*1000"
-                                                    >
-                                                        <t
-                                                            t-set="size_status"
-                                                            t-value="'badge-success'"
-                                                        />
-                                                        <t
-                                                            t-set="message"
-                                                        >Acceptable file size</t>
-                                                    </t>
-                                                    <!-- below 1000 Kb: decent -->
-                                                    <t
-                                                        t-elif="record.image_1920.raw_value.length &lt; 1000*1000"
-                                                    >
-                                                        <t
-                                                            t-set="size_status"
-                                                            t-value="'badge-warning'"
-                                                        />
-                                                        <t
-                                                            t-set="message"
-                                                        >Huge file size. The image should be optimized/reduced.</t>
-                                                    </t>
-                                                    <!-- above 1000 Kb: bad -->
-                                                    <t t-else="1">
-                                                        <t
-                                                            t-set="size_status"
-                                                            t-value="'badge-danger'"
-                                                        />
-                                                        <t
-                                                            t-set="message"
-                                                        >Optimization required! Reduce the image size or increase your compression settings.</t>
-                                                    </t>
-                                                    <span
-                                                        t-attf-class="badge #{size_status} o_inspection_image_size"
-                                                        t-esc="record.image_1920.value"
-                                                        t-att-title="message"
+                                    <field name="id" />
+                                    <field name="name" />
+                                    <field name="image_1920" />
+                                    <field name="sequence" widget="handle" />
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div
+                                                class="card oe_kanban_global_click p-0"
+                                            >
+                                                <div class="o_squared_image">
+                                                    <img
+                                                        class="card-img-top"
+                                                        t-att-src="kanban_image('fleet.vehicle.inspection.line.image', 'image_1920', record.id.raw_value)"
+                                                        t-att-alt="record.name.value"
                                                     />
                                                 </div>
-                                            </t>
-                                        </templates>
-                                    </kanban>
-                                </field>
-                            </group>
+                                                <div class="card-body p-0">
+                                                    <h4
+                                                        class="card-title p-2 m-0 bg-200"
+                                                    >
+                                                        <small><field
+                                                                name="name"
+                                                            /></small>
+                                                    </h4>
+                                                </div>
+                                                <!-- below 100 Kb: good -->
+                                                <t
+                                                    t-if="record.image_1920.raw_value.length &lt; 100*1000"
+                                                >
+                                                    <t
+                                                        t-set="size_status"
+                                                        t-value="'badge-success'"
+                                                    />
+                                                    <t
+                                                        t-set="message"
+                                                    >Acceptable file size</t>
+                                                </t>
+                                                <!-- below 1000 Kb: decent -->
+                                                <t
+                                                    t-elif="record.image_1920.raw_value.length &lt; 1000*1000"
+                                                >
+                                                    <t
+                                                        t-set="size_status"
+                                                        t-value="'badge-warning'"
+                                                    />
+                                                    <t
+                                                        t-set="message"
+                                                    >Huge file size. The image should be optimized/reduced.</t>
+                                                </t>
+                                                <!-- above 1000 Kb: bad -->
+                                                <t t-else="1">
+                                                    <t
+                                                        t-set="size_status"
+                                                        t-value="'badge-danger'"
+                                                    />
+                                                    <t
+                                                        t-set="message"
+                                                    >Optimization required! Reduce the image size or increase your compression settings.</t>
+                                                </t>
+                                                <span
+                                                    t-attf-class="badge #{size_status} o_inspection_image_size"
+                                                    t-esc="record.image_1920.value"
+                                                    t-att-title="message"
+                                                />
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
                         </page>
                     </notebook>
                 </sheet>
