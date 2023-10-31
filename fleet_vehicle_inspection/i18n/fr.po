@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-29 03:45+0000\n"
+"PO-Revision-Date: 2023-10-30 03:00+0000\n"
 "Last-Translator: HOGO Solutions\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__state
@@ -27,7 +29,6 @@ msgstr ""
 " * Annulée: a été annulée, ne peut plus être confirmée."
 
 #. module: fleet_vehicle_inspection
-#: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_equipment_equipment__inspection_count
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle__inspection_count
 msgid "# Inspection Count"
 msgstr "# Nombre d'inspections"
@@ -179,15 +180,11 @@ msgid "Dropdown menu"
 msgstr "Menu déroulant"
 
 #. module: fleet_vehicle_inspection
+#. odoo-python
 #: code:addons/fleet_vehicle_inspection/models/fleet_vehicle_inspection.py:0
 #, python-format
 msgid "Emptying the odometer value of a vehicle is not allowed."
 msgstr "Il n'est pas permis d'effacer la valeur du odomètre d'un véhicule."
-
-#. module: fleet_vehicle_inspection
-#: model:ir.model,name:fleet_vehicle_inspection.model_fleet_vehicle_inspection
-msgid "Equipment Inspection"
-msgstr "Inspection de l'équipement"
 
 #. module: fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_search_view
@@ -210,6 +207,7 @@ msgid "Fleet Vehicle"
 msgstr "Parc automobile"
 
 #. module: fleet_vehicle_inspection
+#: model:ir.model,name:fleet_vehicle_inspection.model_fleet_vehicle_inspection
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_calendar_view
 msgid "Fleet Vehicle Inspection"
 msgstr "Inspections des véhicules"
@@ -409,7 +407,6 @@ msgid "Inspection Lines"
 msgstr "Lignes d'inspection"
 
 #. module: fleet_vehicle_inspection
-#: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_equipment_equipment__inspection_ids
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle__inspection_ids
 msgid "Inspection Logs"
 msgstr "Historique des inspections"
@@ -431,6 +428,7 @@ msgid "Inspection State"
 msgstr "Statut de l'inspection"
 
 #. module: fleet_vehicle_inspection
+#. odoo-python
 #: code:addons/fleet_vehicle_inspection/models/fleet_vehicle_inspection.py:0
 #, python-format
 msgid "Inspection cannot be completed. There are uninspected items."
@@ -460,7 +458,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__equipment_inspection__odometer_unit__kilometers
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__fleet_vehicle_inspection__odometer_unit__kilometers
 msgid "Kilometers"
-msgstr ""
+msgstr "Kilomètres"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection____last_update
@@ -511,7 +509,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__equipment_inspection__odometer_unit__miles
 #: model:ir.model.fields.selection,name:fleet_vehicle_inspection.selection__fleet_vehicle_inspection__odometer_unit__miles
 msgid "Miles"
-msgstr "Milles"
+msgstr ""
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__my_activity_date_deadline
@@ -578,8 +576,8 @@ msgstr ""
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__message_needaction_counter
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection_item__message_needaction_counter
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr ""
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages demandant une action"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,help:fleet_vehicle_inspection.field_fleet_vehicle_inspection__message_has_error_counter
@@ -604,7 +602,7 @@ msgstr ""
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__odometer
 msgid "Odometer"
-msgstr ""
+msgstr "Odomètre"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__odometer_id
@@ -623,6 +621,7 @@ msgid "Odometer measure of the vehicle at the moment of this log"
 msgstr "Kilométrage du véhicule à ce moment là"
 
 #. module: fleet_vehicle_inspection
+#. odoo-python
 #: code:addons/fleet_vehicle_inspection/models/fleet_vehicle_inspection.py:0
 #, python-format
 msgid "Only inspections in 'draft' or 'cancel' states can be confirmed"
@@ -669,7 +668,7 @@ msgstr "Résultat"
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection_line__result_description
 msgid "Result Description"
-msgstr "Description du résultat"
+msgstr "Observations"
 
 #. module: fleet_vehicle_inspection
 #: model:ir.model.fields,field_description:fleet_vehicle_inspection.field_fleet_vehicle_inspection__message_has_sms_error
@@ -775,3 +774,8 @@ msgstr "Points d'inspection automobile"
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_pivot_view
 msgid "Vehicles Inspections"
 msgstr "Inspections des véhicules"
+
+#. module: fleet_vehicle_inspection
+#: model_terms:ir.ui.view,arch_db:fleet_vehicle_inspection.fleet_vehicle_inspection_line_form_view
+msgid "Your observations"
+msgstr "Observations"

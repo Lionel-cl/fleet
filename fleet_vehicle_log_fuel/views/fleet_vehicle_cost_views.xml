@@ -35,9 +35,9 @@
                             <field name="vehicle_id" />
                             <field name="purchaser_id" />
                             <label for="odometer" />
-                            <div class="o_row">
-                                <field name="odometer" />
-                                <field name="odometer_unit" />
+                            <div>
+                                <field name="odometer" class="oe_inline"/>
+                                <field name="odometer_unit" class="oe_inline"/>
                             </div>
                         </group>
                     </group>

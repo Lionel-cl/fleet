@@ -12,12 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-
-#. module: fleet_vehicle_service_kanban
-#: model_terms:ir.ui.view,arch_db:fleet_vehicle_service_kanban.fleet_vehicle_log_services_view_activity
-msgid "/&gt;"
-msgstr ""
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_needaction
@@ -25,7 +21,6 @@ msgid "Action Needed"
 msgstr "Nécessite une action"
 
 #. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_equipment_log_services__active
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__active
 msgid "Active"
 msgstr "Actif"
@@ -70,7 +65,7 @@ msgstr "Archivé"
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_attachment_count
 msgid "Attachment Count"
-msgstr "Compte des pièces jointes"
+msgstr "Nombre de pièces jointes"
 
 #. module: fleet_vehicle_service_kanban
 #: model:mail.message.subtype,description:fleet_vehicle_service_kanban.mail_message_subtype_fleet_service_purchaser_updated
@@ -95,7 +90,7 @@ msgstr "Fournisseur modifié"
 msgid ""
 "Classify and analyze your services categories like: Repair, Maintenance"
 msgstr ""
-"Classez et analysez vos catégories de services comme : Réparation, Maintenance"
+"Classez et analysez vos catégories d'intervention comme : Réparation, Maintenance"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services_tag__color
@@ -120,7 +115,6 @@ msgid "Created on"
 msgstr "Créé le"
 
 #. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_equipment_log_services__stage_id
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__stage_id
 msgid "Current state of the vehicle"
 msgstr "État actuel du véhicule"
@@ -159,7 +153,7 @@ msgstr "Abonnés (Partenaires)"
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Icône Font Awesome e.g. fa-tasks"
+msgstr "Icône Font Awesome par ex. fa-tasks"
 
 #. module: fleet_vehicle_service_kanban
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_service_kanban.fleet_vehicle_log_services_view_search
@@ -207,7 +201,7 @@ msgstr "Si coché, de nouveaux messages demandent votre attention."
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_has_error
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Si actif, certains messages ont une erreur de livraison."
+msgstr "Si coché, certains messages ont une erreur de livraison."
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields.selection,name:fleet_vehicle_service_kanban.selection__equipment_log_services__priority__1
@@ -276,7 +270,7 @@ msgstr "Nom"
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Prochain évènement de calendrier pour l'activité"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__activity_date_deadline
@@ -286,7 +280,7 @@ msgstr "Date limite de l'activité à venir"
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__activity_summary
 msgid "Next Activity Summary"
-msgstr "Résumé d'activité suivant"
+msgstr "Résumé de l'activité suivante"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__activity_type_id
@@ -311,8 +305,8 @@ msgstr "Nombre d'erreurs"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr "Nombre de messages exigeant une action"
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_has_error_counter
@@ -332,7 +326,6 @@ msgid "Priority"
 msgstr "Favoris"
 
 #. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_equipment_log_services__user_id
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__user_id
 msgid "Responsible"
 msgstr "Responsable"
@@ -353,7 +346,6 @@ msgid "Sequence"
 msgstr ""
 
 #. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_equipment_log_services__stage_id
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__stage_id
 msgid "Service Stage"
 msgstr "Etape du service"
@@ -371,7 +363,7 @@ msgstr "Etiquette de services"
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model,name:fleet_vehicle_service_kanban.model_fleet_vehicle_log_services
 msgid "Services for vehicles"
-msgstr "Services associés aux véhicules"
+msgstr "Interventions associées aux véhicules"
 
 #. module: fleet_vehicle_service_kanban
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_service_kanban.fleet_vehicle_log_services_view_search
@@ -424,7 +416,7 @@ msgstr "Activités d'aujourd'hui"
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Type d'activité d'exception enregistrée"
+msgstr "Type d'activité d'exception enregistrée."
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_unread
@@ -433,19 +425,9 @@ msgid "Unread Messages"
 msgstr "Messages non lus"
 
 #. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__message_unread_counter
-msgid "Unread Messages Counter"
-msgstr "Compteur de messages non lus"
-
-#. module: fleet_vehicle_service_kanban
 #: model:ir.model.fields,help:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services_stage__sequence
 msgid "Used to order the stages"
 msgstr "Utilisé pour commander les étapes"
-
-#. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_equipment_log_services__purchaser_id
-msgid "User"
-msgstr "Utilisateur"
 
 #. module: fleet_vehicle_service_kanban
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_service_kanban.fleet_vehicle_log_services_view_kanban
@@ -471,7 +453,6 @@ msgid "Vehicles Services"
 msgstr "Services aux véhicules"
 
 #. module: fleet_vehicle_service_kanban
-#: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_equipment_log_services__vendor_id
 #: model:ir.model.fields,field_description:fleet_vehicle_service_kanban.field_fleet_vehicle_log_services__vendor_id
 msgid "Vendor"
 msgstr "Fournisseur"

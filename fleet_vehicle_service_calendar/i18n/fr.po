@@ -12,10 +12,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: fleet_vehicle_service_calendar
-#: model:ir.model.fields,field_description:fleet_vehicle_service_calendar.field_equipment_log_services__meeting_count
 #: model:ir.model.fields,field_description:fleet_vehicle_service_calendar.field_fleet_vehicle_log_services__meeting_count
 msgid "# Meetings"
 msgstr "# Réunions"
@@ -35,6 +35,7 @@ msgid "Calendar Event"
 msgstr "Calendrier de l'événement"
 
 #. module: fleet_vehicle_service_calendar
+#. odoo-python
 #: code:addons/fleet_vehicle_service_calendar/models/fleet_vehicle_log_services.py:0
 #, python-format
 msgid ""
@@ -47,7 +48,7 @@ msgstr ""
 #. module: fleet_vehicle_service_calendar
 #: model:ir.model,name:fleet_vehicle_service_calendar.model_fleet_vehicle_log_services
 msgid "Services for vehicles"
-msgstr "Services associés aux véhicules"
+msgstr "Interventions associées aux véhicules"
 
 #. module: fleet_vehicle_service_calendar
 #: model:ir.model.fields,field_description:fleet_vehicle_service_calendar.field_calendar_event__vehicle_service_id
@@ -55,6 +56,7 @@ msgid "Vehicle Service"
 msgstr "Service de véhicule"
 
 #. module: fleet_vehicle_service_calendar
+#. odoo-python
 #: code:addons/fleet_vehicle_service_calendar/models/fleet_vehicle_log_services.py:0
 #, python-format
 msgid "unknown"
