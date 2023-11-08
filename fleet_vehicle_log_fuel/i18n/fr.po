@@ -199,7 +199,7 @@ msgstr "Relevès des consommations"
 #. module: fleet_vehicle_log_fuel
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_vehicle_view_form
 msgid "Fuel Logs"
-msgstr "Passages"
+msgstr "Relevès de consommation"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model,name:fleet_vehicle_log_fuel.model_fleet_vehicle_log_fuel
