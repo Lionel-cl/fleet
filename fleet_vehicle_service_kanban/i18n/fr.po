@@ -439,7 +439,7 @@ msgstr "Véhicule"
 #: model:ir.model,name:fleet_vehicle_service_kanban.model_fleet_vehicle_log_services_stage
 #: model:ir.ui.menu,name:fleet_vehicle_service_kanban.fleet_vehicle_log_services_stage_menu
 msgid "Vehicle Services Stages"
-msgstr "Statut des services aux véhicules"
+msgstr "Étapes des services aux véhicules"
 
 #. module: fleet_vehicle_service_kanban
 #: model:ir.actions.act_window,name:fleet_vehicle_service_kanban.fleet_vehicle_log_services_tag_action
